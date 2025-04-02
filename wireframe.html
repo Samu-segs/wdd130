@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wireframe Page</title>
 
-    <!-- Google Fonts Link -->
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Wireframe for Rafting Adventure website. Explore our services, history, and more!">
+    <link href="stylesheet">
+    <link href="stylesheet">
 
-    <!-- Internal CSS for styles -->
+    
     <style>
         :root {
             --primary-color: #0077B6;
             --secondary-color: #34A853;
             --accent1-color: #FFB84D;
             --accent2-color: #1A202C;
-            --background-color: #f4f4f4;
-            --footer-background: #333;
-            --footer-text-color: white;
+            --background-color: #f7f7f4;
+            --footer-background: #59b6f3;
+            --footer-text-color: rgb(250, 246, 246);
         }
 
         body {
@@ -33,8 +33,7 @@
             font-family: 'Bebas Neue', sans-serif;
         }
 
-        /* Styling for header */
-        header {
+                header {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -43,37 +42,36 @@
         }
 
         header img {
-            max-width: 150px;  /* Adjust based on your logo size */
+            max-width: 150px;  /Adjust based on your logo size /
         }
 
         nav a {
-            color: white;
+            color: rgb(245, 243, 243);
             text-decoration: none;
             margin: 0 15px;
-            font-size: 16px;
+            font-size: 26px;
         }
 
         nav a:hover {
             text-decoration: underline;
         }
 
-        /* Styling for main content */
+        
         main {
             padding: 20px;
         }
 
-        /* Styling for hero section */
-        .hero {
+            .hero {
             background-color: var(--accent1-color);
-            color: white;
+            color: rgb(19, 20, 19);
             padding: 60px 20px;
             text-align: center;
-            position: relative; /* Set relative positioning to place absolute elements inside it */
+            position: relative; 
         }
 
         .hero h1 {
             font-size: 3rem;
-            position: absolute; /* Position h1 on top of the hero image */
+            position: absolute; 
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -81,21 +79,21 @@
         }
 
         .hero img {
-            max-width: 100%; /* Make the image responsive */
+            max-width: 200%; 
             height: auto;
         }
 
         article {
             margin: 20px 0;
-            background-color: #fff;
+            background-color: #2caed6;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            position: absolute; /* Position article on top of the hero image */
-            top: 70%;  /* Adjust position */
+            position: absolute; 
+            top: 70%;  
             left: 50%;
             transform: translateX(-50%);
-            width: 80%; /* Optional: adjust the width of the article */
+            width: 80%; 
         }
 
         article img {
@@ -113,23 +111,21 @@
             font-size: 2rem;
         }
 
-        /* Adventure Awaits You Section */
-        .adventure-section {
+            .adventure-section {
             background-color: var(--secondary-color);
             padding: 40px 20px;
-            color: white;
+            color: rgb(8, 8, 8);
             text-align: center;
         }
 
         .adventure-section img {
-            width: 100%;
+            width: 25%;
             height: auto;
             margin: 15px;
             border-radius: 8px;
         }
 
-        /* Footer Section */
-        footer {
+            footer {
             background-color: var(--footer-background);
             color: var(--footer-text-color);
             padding: 20px;
@@ -147,7 +143,7 @@
             text-decoration: underline;
         }
 
-        /* Styling for Social Media Icons */
+        
         footer a img {
             width: 30px;
             height: 30px;
@@ -155,11 +151,11 @@
         }
 
         footer a {
-            text-decoration: none; /* Remove text decoration from social media links */
+            text-decoration: none; 
         }
 
         footer a:hover {
-            text-decoration: none; /* Ensure hover state also has no text decoration */
+            text-decoration: none; 
         }
 
     </style>
@@ -167,12 +163,12 @@
 
 <body>
 
-    <!-- Header Section -->
+    
     <header>
-        <!-- Logo -->
-        <img src="images/logo.png" alt="Rafting Logo">
+        
+        <img src="z-splash.wwr.png" alt="Rafting Logo">
 
-        <!-- Navigation -->
+        
         <nav>
             <a href="#" title="Home">Home</a>
             <a href="#" title="Services">Services</a>
@@ -181,64 +177,64 @@
         </nav>
     </header>
 
-    <!-- Main Content Section -->
+    
     <main>
-        <!-- Hero Section -->
+        
         <div class="hero">
-            <!-- Image inside Hero section -->
-            <img src="images/hero-image.jpg" alt="Rafting Adventure">
+            
+            <img src="week3/images/awesome.jpg" alt="Rafting Adventure">
             <h1>Welcome to Our Rafting Adventure!</h1>
             
-            <!-- Article element with image and paragraph -->
+            
             <article>
-                <img src="images/rafting-image.jpg" alt="Exciting Rafting Experience">
+                <img src="" alt="Exciting Rafting Experience">
                 <p>Get ready for the ultimate adventure! Our rafting tours offer an unforgettable experience, taking you through beautiful rivers and thrilling rapids. Whether you’re a beginner or an expert, we’ve got a trip for you.</p>
             </article>
         </div>
 
-        <!-- History Section -->
+        
         <section>
             <h2>History</h2>
             <p>Our rafting company was founded in 1995 with the goal of providing an exciting yet safe experience on the water. Over the years, we have expanded our services, built strong partnerships with local communities, and introduced eco-friendly practices to help preserve the beautiful rivers we navigate.</p>
         </section>
 
-        <!-- Adventure Awaits You Section -->
+        
         <section class="adventure-section">
             <h2>Adventure Awaits You</h2>
             <div>
-                <img src="images/adventure1.jpg" alt="Adventure 1">
-                <img src="images/adventure2.jpg" alt="Adventure 2">
-                <img src="images/adventure3.jpg" alt="Adventure 3">
-                <img src="images/adventure4.jpg" alt="Adventure 4">
-                <img src="images/adventure5.jpg" alt="Adventure 5">
+                <img src="week3/images/fun.jpg" alt="Adventure 1">
+                <img src="week3/images/river.jpg" alt="Adventure 2">
+                <img src="week3/images/team.jpg" alt="Adventure 3">
+                <img src="week3/images/splash.jpg" alt="Adventure 4">
+                <img src="week3/images/rafting.jpg" alt="Adventure 5">
             </div>
         </section>
 
-        <!-- First Section -->
+        
         <section>
             <h2>Our Services</h2>
             <p>Explore the variety of rafting adventures we offer for all skill levels. Whether you're a beginner or an expert, we've got the perfect trip for you!</p>
         </section>
 
-        <!-- Second Section -->
+        
         <section>
             <h2>About Us</h2>
             <p>We are passionate about rafting and committed to providing the best outdoor experiences. Our team of experts ensures that every trip is safe, exciting, and unforgettable.</p>
         </section>
     </main>
 
-    <!-- Footer Section -->
+   
     <footer>
         <p>&copy; 2025 Rafting Adventures, All rights reserved | Created by Samuel Gonzalez Silva</p>
-        <!-- Social Media Links -->
+        
         <a href="#" title="Facebook">
-            <img src="images/facebook-icon.png" alt="Facebook">
+            <img src="week3/images/face.jpg" alt="Facebook">
         </a>
         <a href="#" title="Twitter">
-            <img src="images/twitter-icon.png" alt="Twitter">
+            <img src="week3/images/x.jpg" alt="Twitter">
         </a>
         <a href="#" title="Instagram">
-            <img src="images/instagram-icon.png" alt="Instagram">
+            <img src="week3/images/Ig.jpg" alt="Instagram">
         </a>
     </footer>
 
