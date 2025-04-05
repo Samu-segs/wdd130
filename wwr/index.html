@@ -1,117 +1,243 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samuel Gonzalez Silva | Holy Grail Layout Example</title>
-    <meta name="description" content="Personal webpage of Samuel Gonzalez Silva, a student at BYU Pathway Worldwide pursuing a Web Design and Development Certificate. Learn more about his studies, career, and interests.">
-    <meta name="author" content="Samuel Gonzalez Silva">
+    <title>Wireframe Page</title>
+
+    <meta name="description" content="Wireframe for Rafting Adventure website. Explore our services, history, and more!">
+    <link href="stylesheet">
+    <link href="stylesheet">
+
+    
     <style>
-        
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+        :root {
+            --primary-color: #505033;
+            --secondary-color: #264969;
+            --accent1-color: #CFCFB4;
+            --accent2-color: #b4cde4;
+            --background-color: #f7f7f4;
+            --footer-background: #59b6f3;
+            --footer-text-color: rgb(250, 246, 246);
         }
 
-        
-        header {
-            background-color: #333;
-            color: rgb(161, 207, 245);
-            padding: 10px 0;
-            text-align: center;
+        body {
+            font-family: 'Lora', serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+        }
+
+        h1, h2, h3 {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+                header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: var(--primary-color);
+        }
+
+        header img {
+            max-width: 150px;  /Adjust based on your logo size /
         }
 
         nav a {
-            color: rgb(148, 144, 144);
+            color: rgb(245, 243, 243);
             text-decoration: none;
             margin: 0 15px;
+            font-size: 26px;
         }
 
-       
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        
         main {
-            max-width: 804px;
-            margin: 0 auto;
             padding: 20px;
         }
 
-        
-        main img {
-            max-width: 100%;
+            .hero {
+            background-color: var(--accent1-color);
+            color: rgb(240, 238, 237);
+            padding: 60px 20px;
+            text-align: center;
+            position: relative; 
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            position: absolute; 
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+        }
+
+        .hero img {
+            max-width: 100%; 
             height: auto;
         }
 
-        
-        p {
-            padding: 0px; 
+        article {
+            margin: 2px 0;
+            background-color: #2caed6;
+            padding: 2px;
+            border-radius: 2%;
+            box-shadow: 0 4px 8px rgba(218, 12, 12, 0.1);
+            position: absolute; 
+            top: 29%;  
+            left: 10%;
+            transform: translateX(-50%);
+            width: 18%; 
         }
 
-        
-        aside {
-            width: 20rem;
-            margin: 1rem;
-            border: 1px solid rgba(0, 0, 0, 0.2);
-            padding: 1rem;
-            background-color: #eee;
-            color: #333;
+        article img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        section {
+            margin: 20px 0;
+        }
+
+        section h2 {
+            color: var(--primary-color);
+            font-size: 2rem;
+        }
+
+            .adventure-section {
+            background-color: var(--secondary-color);
+            padding: 40px 20px;
+            color: rgb(10, 10, 10);
             text-align: center;
         }
 
-        
-        aside img {
-            width: 100%;
+        .adventure-section img {
+            width: 25%;
             height: auto;
-            max-width: 200px; 
-            margin: 0 auto; 
+            margin: 18px;
+            border-radius: 8px;
+        }
+
+            footer {
+            background-color: var(--footer-background);
+            color: var(--footer-text-color);
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: var(--footer-text-color);
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
 
         
-        footer {
-            margin-top: 15px; 
-            border-top: 1px solid #000; 
-            text-align: center; 
-            padding: 10px;
-            background-color: #333;
-            color: white;
+        footer a img {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
         }
+
+        footer a {
+            text-decoration: none; 
+        }
+
+        footer a:hover {
+            text-decoration: none; 
+        }
+
     </style>
 </head>
+
 <body>
+
+    
     <header>
-        <h1>A Holy Grail Layout Example</h1>
+        
+        <img src="images/z-splash.jpg" alt="Rafting Logo">
+
+        
         <nav>
             <a href="#" title="Home">Home</a>
-            <a href="wwr/" title="Rafting Website">Rafting Website</a>
+            <a href="#" title="Services">Services</a>
+            <a href="#" title="About Us">About Us</a>
+            <a href="#" title="Contact">Contact</a>
         </nav>
     </header>
+
     
     <main>
+        
+        <div class="hero">
+            
+            <img src="images/awesome.jpg" alt="Rafting Adventure">
+            <h1>Welcome to Our Rafting Adventure!</h1>
+            
+            
+            <article>
+                <img src="images/splash.jpg" alt="Exciting Rafting Experience">
+                <p>Get ready for the ultimate adventure! Our rafting tours offer an unforgettable experience, taking you through beautiful rivers and thrilling rapids. Whether you’re a beginner or an expert, we’ve got a trip for you.</p>
+            </article>
+        </div>
+
+        
         <section>
-            <h1>Samuel Gonzalez Silva | WDD 130</h1>
-            <img src="images/profile.jpeg" alt="Portrait of Samuel Gonzalez Silva, a student at BYU Pathway Worldwide" class="profile-image">
-            <p>My name is Samuel Gonzalez Silva. I am a student at BYU Pathway Worldwide, currently working on my Web Design and Development Certificate. In addition to my studies, I work full-time and am a father of three beautiful children. Though I lead a busy life, I am committed to succeeding in both my education and career. I am excited to expand my knowledge in web design and development, especially in HTML, CSS, and JavaScript. I am eager to explore the latest web technologies and create innovative digital experiences.</p>
+            <h2>History</h2>
+            <p>Our rafting company was founded in 1995 with the goal of providing an exciting yet safe experience on the water. Over the years, we have expanded our services, built strong partnerships with local communities, and introduced eco-friendly practices to help preserve the beautiful rivers we navigate.</p>
+        </section>
+
+        
+        <section class="adventure-section">
+            <h2>Adventure Awaits You</h2>
+            <div>
+                <img src="images/fun.jpg" alt="Adventure 1">
+                <img src="images/rafting.jpg" alt="Adventure 2">
+                <img src="images/rapids.jpg" alt="Adventure 3">
+                <img src="images/river.jpg" alt="Adventure 4">
+                <img src="images/team.jpg" alt="Adventure 5">
+            </div>
+        </section>
+
+        
+        <section>
+            <h2>Our Services</h2>
+            <p>Explore the variety of rafting adventures we offer for all skill levels. Whether you're a beginner or an expert, we've got the perfect trip for you!</p>
+        </section>
+
+        
+        <section>
+            <h2>About Us</h2>
+            <p>We are passionate about rafting and committed to providing the best outdoor experiences. Our team of experts ensures that every trip is safe, exciting, and unforgettable.</p>
         </section>
     </main>
-    
-    <aside>
-        <section>
-            <h2>Mexico</h2>
-            <img src="images/mexico.jpg" alt="Scenic view of Mexico's landscape, featuring mountains and beaches" class="mexico-image">
-            <p>Mexico is a vibrant country known for its rich culture, history, and beautiful landscapes. From the beaches of Cancun to the mountains of Oaxaca, it offers a variety of experiences that attract millions of tourists every year.</p>
-        </section>
-    </aside>
 
-    <aside>
-        <section>
-            <h2>Pachuca</h2>
-            <img src="images/reloj.jpg" alt="The clock in the center of Pachuca, Mexico, resembling Big Ben" class="pachuca-image">
-            <p>Pachuca, the capital of the state of Hidalgo, is located just an hour north of Mexico City. In the heart of the city stands a clock with a unique history. The clock's mechanism is modeled after the famous Big Ben in London, making it a point of interest for both locals and visitors.</p>
-        </section>
-    </aside>
-
+   
     <footer>
-        <p>&copy; 2025 Samuel Gonzalez Silva. All rights reserved.</p>
+        <p>&copy; 2025 Rafting Adventures, All rights reserved | Created by Samuel Gonzalez Silva</p>
+        
+        <a href="#" title="Facebook">
+            <img src="images/face.jpg" alt="Facebook">
+        </a>
+        <a href="#" title="Twitter">
+            <img src="images/x.jpg" alt="Twitter">
+        </a>
+        <a href="#" title="Instagram">
+            <img src="images/Ig.jpg" alt="Instagram">
+        </a>
     </footer>
-</body>
-</html>
 
+</body>
+
+</html>
