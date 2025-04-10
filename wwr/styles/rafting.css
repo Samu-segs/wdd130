@@ -107,17 +107,46 @@ section h2 {
 }
 
 .history-section {
+    padding: 40px 20px;
+    background-color: var(--accent1-color);
+    text-align: center;
+  }
+  
+  .history-section h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+  }
+  
+  .history-flex {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-}
-
-.history-section p {
-    font-size: 1.2rem;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .history-text {
+    flex: 1;
+    max-width: 300px;
+    font-size: 1.1rem;
     line-height: 1.6;
-}
-
+    color: var(--primary-color);
+    text-align: left;
+  }
+  
+  .history-image {
+    flex: 1;
+    max-width: 400px;
+  }
+  
+  .history-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
 
 .adventure-section {
     background-color: var(--secondary-color);
