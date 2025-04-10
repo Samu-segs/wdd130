@@ -17,10 +17,10 @@
     <header>
         <img src="images/z-splash.jpg" alt="Rafting Logo">
         <nav>
-            <a href="#" title="Home">Home</a>
-            <a href="#" title="Services">Services</a>
-            <a href="#" title="About Us">About Us</a>
-            <a href="#" title="Contact">Contact</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips,html">trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
