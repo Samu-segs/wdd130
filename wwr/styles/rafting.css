@@ -147,12 +147,15 @@ section h2 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   
-
-.adventure-section {
+  .adventure-section {
     background-color: var(--secondary-color);
     padding: 40px 20px;
-    color: rgb(243, 240, 240);
+    color: rgb(243, 240, 240); /* Default text color */
     text-align: center;
+}
+
+.adventure-section h2 {
+    color: black; /* Title is now black */
 }
 
 .adventure-section .adventure-images {
@@ -176,11 +179,49 @@ section h2 {
 
 .adventure-section figcaption {
     text-align: center;
-    color:#f3f0ee
+    color: #f3f0ee; /* ✅ Fixed missing semicolon */
     margin-top: 10px;
     font-size: 1.1rem;
     font-weight: bold;
 }
+.adventure-section {
+    background-color: var(--secondary-color);
+    padding: 40px 20px;
+    color: rgb(243, 240, 240); /* Default text color */
+    text-align: center;
+}
+
+.adventure-section h2 {
+    color: black; /* Title is now black */
+}
+
+.adventure-section .adventure-images {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.adventure-section figure {
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+
+.adventure-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.adventure-section figcaption {
+    text-align: center;
+    color: #f3f0ee; /* ✅ Fixed missing semicolon */
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
 
 footer {
     background-color: var(--footer-background);
