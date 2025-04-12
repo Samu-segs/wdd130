@@ -199,9 +199,15 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+footer {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;       
+    padding: 10px;             
+}
 
 footer a img {
     width: 30px;
     height: 30px;
-    vertical-align: right;
+    margin-left: 10px; 
 }
